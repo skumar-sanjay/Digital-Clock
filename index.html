@@ -1,0 +1,29 @@
+<!--make a digital clock using java script-->
+<html>
+  <head>
+    <script>
+      function getTimer()
+      {
+      var d=new Date();
+      var hh,mm,ss,ms,MyDv,tt="";
+      MyDv=document.getElementById("dv");
+      hh=d.getHours();
+      mm=d.getMinutes();
+      ss=d.getSeconds();
+      ms=d.getMilliseconds();
+      if(hh>12){
+        hh=hh-12;
+        tt="PM";
+      }
+      else{
+        tt="AM";
+      }
+      MyDv.innerHTML=hh+":"+mm+":"+ss+":"+ms+" "+tt;
+      window.setTimeout("getTimer()");
+    }
+      </script>
+  </head>
+  <body onload="getTimer()">
+ <div id="dv" style="height: 90px; width: 310px; background-color: black; color: red;padding: 30px;margin:0px auto;font-size: 50px; border-radius: 30px;"></div>
+  </body>
+</html>
