@@ -1,2 +1,2 @@
 # Digital-Clock
-Using JS making  a digital clock
+1) here this code is digital clock and uing Javascript 
